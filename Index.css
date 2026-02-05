@@ -1,0 +1,101 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-image: url("../Images/screenshot.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+
+h1 {
+  background-image: url("../Images/1187b75e-c73c-41ec-8095-587c620ffba8.png");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0;
+}
+
+
+p1 {
+  background-image: url("../Images/twitch Profile banner.png");
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 0.5rem 0;
+  height: 700px;
+  width: auto;
+
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background-image: url("../Images/927d4c49-d5c1-4684-be84-e1693f228748.png");
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  font-size: 25px;
+  width: 400px;
+  height: 80px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Hide the page header */
+h1 {
+  display: none !important;
+}
+
+/* Fixed navigation (keeps the list visible while scrolling) */
+.fixed-nav {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  background: rgba(0,0,0,0.35);
+  border-radius: 8px;
+  display: flex;           /* keep items on one line */
+  gap: 0.5rem;
+  flex-wrap: nowrap;       /* prevent wrapping to next row */
+  white-space: nowrap;
+  overflow-x: auto;       /* allow horizontal scroll if viewport is too small */
+  -webkit-overflow-scrolling: touch;
+}
+.fixed-nav li {
+  display: inline-flex;
+  vertical-align: middle;
+  width: auto;             /* prevent fixed 400px width from forcing wrap */
+  min-width: 120px;       /* gives each item a comfortable size */
+}
+
+/* Prevent page content from hiding under the fixed nav */
+body {
+  padding-top: 110px;
+}
